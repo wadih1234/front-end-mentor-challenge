@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root{
+    --primary-pale-color:hsl(225, 100%, 94%);
+    --primary-bright-color:hsl(245, 75%, 52%);
+    --secondary-Very-pale-blue: hsl(225, 100%, 98%);
+    --secondary-Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.container{
+    max-width: 80%;
+    width:500px;
+    margin:50px auto;
+    padding-bottom:10px;
+    border-radius: 20px;
+    background-color:#fff;
+}
+.container>img{
+    width:100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.description h2{
+    text-align:center;
+    padding:20px;
+    font-size:29px;
+}
+.description p{
+    width:300px;
+    max-width: 70%;
+    line-height: 1.5;
+    margin:0 auto;
+    color:var(--secondary-Desaturated-blue);
+}
+.plan{
+    display: flex;
+    gap:20px;
+    max-width:80%;
+    margin-left:100px;
+    margin-right:10px;
+    margin-top:40px;
+}
+.plan-info h3{
+    font-size:18px;
+}
+.plan-info p{
+    color:var(--secondary-Desaturated-blue);
+}
+.plan a{
+    margin:10px 50px;
+    color:var(--primary-bright-color);
+}
+.btn{
+    margin:20px;
+    padding:10px 30px;
+    text-align:center;
+    cursor:pointer;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+.proceed-btn{
+    background-color:var(--primary-bright-color);
+    color:#fff;
+    max-width:65%;
+    margin-left:89px;
+    border-radius:10px;
+}
+.cancel-btn{
+    color:var(--secondary-Desaturated-blue);
+}
